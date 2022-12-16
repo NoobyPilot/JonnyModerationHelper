@@ -1,0 +1,8 @@
+{
+  "schema-based": false,
+  "baseline": true,
+  "to-version": 1,
+  "statements": [
+    "CREATE TABLE public.database_log (ID BIGSERIAL PRIMARY KEY,SCHEMA_NAME TEXT NOT NULL,DATABASE_VERSION INT NOT NULL,TIME TIMESTAMP NOT NULL DEFAULT current_timestamp)"
+  ]
+}
