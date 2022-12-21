@@ -30,5 +30,5 @@ jobs:
       uses: actions/upload-artifact@v3.1.1
       with:
         name: "Bot-Artifact"
-        path: "JonnyModerationHelper/bin/Release/net7.0/*"
+        path: "/home/runner/work/JonnyModerationHelper/JonnyModerationHelper/JonnyModerationHelper/bin/Debug/net7.0/*"
         if-no-files-found: error
