@@ -26,9 +26,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Upload Build Artifact
-      uses: actions/upload-artifact@v3.1.1
-      with:
-        name: "Bot-Artifact"
-        path: "/home/runner/work/JonnyModerationHelper/JonnyModerationHelper/JonnyModerationHelper/bin/Debug/net7.0/*"
-        if-no-files-found: error
+    - name: Create Release
+      uses: ncipollo/release-action@v1.12.0
